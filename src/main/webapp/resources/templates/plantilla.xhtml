@@ -1,0 +1,70 @@
+<?xml version='1.0' encoding='UTF-8' ?> 
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:ui="http://xmlns.jcp.org/jsf/facelets"
+      xmlns:h="http://xmlns.jcp.org/jsf/html"
+      xmlns:b="http://bootsfaces.net/ui">
+
+    <h:head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+        <h:outputStylesheet library="css" name="default.css"/>
+        <h:outputStylesheet library="css" name="cssLayout.css"/>
+        <title>Clinica Odonto</title>
+    </h:head>
+
+    <h:body>
+        <!-- Definiendo la barra general del menú -->
+        <b:navBar fluid="true" brand="Clinica Odonto"
+                  brandHref="#{request.contextPath}/faces/principal.xhtml">
+            <b:navbarLinks pull="left">
+                <b:dropMenu value="Pacientes" icon-awesome="fa-group">
+                    <b:navLink value="Gestión" 
+                               icon-awesome="fa-newspaper-o"
+                               href="#{request.contextPath}/faces/pacientes/list.xhtml"/>
+                    <b:navLink value="Doctor" 
+                               icon-awesome="fa-group"
+                               href="#{request.contextPath}/faces/pacientes/certificacion.xhtml"/>
+                </b:dropMenu>
+                
+                <b:dropMenu value="Doctores" icon-awesome="fa-group">
+                    <b:navLink value="Registro" 
+                               icon-awesome="fa-newspaper-o"
+                               href="#{request.contextPath}/faces/prospecto/registro.xhtml"/>
+                    <b:navLink value="Reporte" 
+                               icon-awesome="fa-newspaper-o"
+                               href="#{request.contextPath}/faces/prospecto/reporte.xhtml"/>
+                </b:dropMenu>`
+                
+                <b:dropMenu value="Tecnicas de Tratamiento" icon-awesome="fa-group">
+                    <b:navLink value="Registro" 
+                               icon-awesome="fa-newspaper-o"
+                               href="#{request.contextPath}/faces/prospecto/registro.xhtml"/>
+                    <b:navLink value="Reporte" 
+                               icon-awesome="fa-newspaper-o"
+                               href="#{request.contextPath}/faces/prospecto/reporte.xhtml"/>
+                </b:dropMenu>`
+                
+                <b:dropMenu value="Tratamientos" icon-awesome="fa-group">
+                    <b:navLink value="Registro" 
+                               icon-awesome="fa-newspaper-o"
+                               href="#{request.contextPath}/faces/prospecto/registro.xhtml"/>
+                    <b:navLink value="Reporte" 
+                               icon-awesome="fa-newspaper-o"
+                               href="#{request.contextPath}/faces/prospecto/reporte.xhtml"/>
+                </b:dropMenu>`
+            </b:navbarLinks>
+            <b:navbarLinks pull="right" style-class="hidden-xs">
+                <b:dropMenu value="" icon-awesome="fa-cog">
+                    <b:navLink value="Cerrar" 
+                               href="#{request.contextPath}/faces/index.xhtml"/>                    
+                </b:dropMenu>
+            </b:navbarLinks>
+        </b:navBar>        
+    
+        <div id="content" class="center_content">
+            <ui:insert name="content">Content</ui:insert>
+        </div>
+
+    </h:body>
+
+</html>
