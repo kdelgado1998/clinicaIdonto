@@ -29,10 +29,10 @@ public class PacienteGestion {
                         datos.getString(4),//nombre
                         datos.getString(5),//apellido1
                         datos.getString(6),//apellido2
-                        datos.getString(7),//edad
-                        datos.getString(8),//telefono
+                        datos.getInt(7),//edad
+                        datos.getInt(8),//telefono
                         datos.getString(9),//correo
-                        datos.getString(10)));//activo
+                        datos.getBoolean(10)));//activo
             }
         } catch (SQLException ex) {
             Logger.getLogger(PacienteGestion.class.getName()).log(Level.SEVERE, null, ex);

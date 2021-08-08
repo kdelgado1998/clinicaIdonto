@@ -3,12 +3,11 @@
 <html xmlns="http://www.w3.org/1999/xhtml"
       xmlns:ui="http://xmlns.jcp.org/jsf/facelets"
       xmlns:h="http://xmlns.jcp.org/jsf/html"
-      xmlns:b="http://bootsfaces.net/ui">
+      xmlns:b="http://bootsfaces.net/ui"
+      xmlns:f="http://xmlns.jcp.org/jsf/core">
 
     <h:head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-        <h:outputStylesheet library="css" name="default.css"/>
-        <h:outputStylesheet library="css" name="cssLayout.css"/>
         <title>Clinica Odonto</title>
     </h:head>
 
@@ -57,13 +56,25 @@
                 <b:dropMenu value="" icon-awesome="fa-cog">
                     <b:navLink value="Cerrar" 
                                href="#{request.contextPath}/faces/index.xhtml"/>                    
+                    <b:navLink value ="Temas">
+                        <h:form style="display:inline" styleClass="form-inline">
+                            <b:selectOneMenu value="#{themeController.tema}"
+                                             style="width: 180px;margin:8px"
+                                             onchange="$('.theme-selector-button').click()">
+                                <f:selectItem itemValue="default" itemLabel="default"/>
+                                <f:selectItem itemValue="patternfly" itemLabel="patternfly"/>
+                                <f:selectItem itemValue="cyborg" itemLabel="cyborg"/>
+                            </b:selectOneMenu>
+                            <b:commandButton class="theme-selector-button" value="select"
+                                             style="display: none"/>
+                        </h:form>
+                    </b:navLink>
                 </b:dropMenu>
             </b:navbarLinks>
         </b:navBar>        
     
-        <div id="content" class="center_content">
+
             <ui:insert name="content">Content</ui:insert>
-        </div>
 
     </h:body>
 

@@ -5,6 +5,7 @@ public class Paciente {
     private int id;
     private String idPaciente;
     private String idDoctor;
+    private String nombre;
     private String apellido1;
     private String apellido2;
     private int edad;
@@ -15,19 +16,16 @@ public class Paciente {
     public Paciente() {
     }
 
-    public Paciente(String idPaciente, String idDoctor, String apellido1, String apellido2, int edad, int telefono, String correo, boolean activo) {
+    public Paciente(String idPaciente, String idDoctor, String nombre, String apellido1, String apellido2, int edad, int telefono, String correo, boolean activo) {
         this.idPaciente = idPaciente;
         this.idDoctor = idDoctor;
+        this.nombre = nombre;
         this.apellido1 = apellido1;
         this.apellido2 = apellido2;
         this.edad = edad;
         this.telefono = telefono;
         this.correo = correo;
         this.activo = activo;
-    }
-
-    public Paciente(String string, String string0, String string1, String string2, String string3, String string4, String string5, String string6, String string7) {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
     }
 
     public int getId() {
@@ -52,6 +50,14 @@ public class Paciente {
 
     public void setIdDoctor(String idDoctor) {
         this.idDoctor = idDoctor;
+    }
+
+    public String getNombre() {
+        return nombre;
+    }
+
+    public void setNombre(String nombre) {
+        this.nombre = nombre;
     }
 
     public String getApellido1() {
@@ -101,6 +107,8 @@ public class Paciente {
     public void setActivo(boolean activo) {
         this.activo = activo;
     }
+
+    
     
     
     
