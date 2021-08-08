@@ -1,0 +1,92 @@
+<?xml version='1.0' encoding='UTF-8' ?> 
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:ui="http://xmlns.jcp.org/jsf/facelets"
+      xmlns:h="http://xmlns.jcp.org/jsf/html"
+      xmlns:b="http://bootsfaces.net/ui"
+      xmlns:f="http://xmlns.jcp.org/jsf/core">
+
+    <h:head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+        <title>Clinica Odonto</title>
+    </h:head>
+
+    <h:body>
+        <!-- Definiendo la barra general del menú -->
+        <b:navBar fluid="true" brand="Clinica Odonto"
+                  brandHref="#{request.contextPath}/faces/principal.xhtml">
+            <b:navbarLinks pull="left">
+                <b:dropMenu value="Pacientes" icon-awesome="fa-group">
+                    <b:navLink value="Gestión" 
+                               icon-awesome="fa-newspaper-o"
+                               href="#{request.contextPath}/faces/pacientes/list.xhtml"/>
+                    <b:navLink value="Doctor" 
+                               icon-awesome="fa-group"
+                               href="#{request.contextPath}/faces/pacientes/certificacion.xhtml"/>
+                </b:dropMenu>
+                
+                <b:dropMenu value="Doctores" icon-awesome="fa-group">
+                    <b:navLink value="Registro" 
+                               icon-awesome="fa-newspaper-o"
+                               href="#{request.contextPath}/faces/prospecto/registro.xhtml"/>
+                    <b:navLink value="Reporte" 
+                               icon-awesome="fa-newspaper-o"
+                               href="#{request.contextPath}/faces/prospecto/reporte.xhtml"/>
+                </b:dropMenu>`
+                
+                <b:dropMenu value="Tecnicas de Tratamiento" icon-awesome="fa-group">
+                    <b:navLink value="Registro" 
+                               icon-awesome="fa-newspaper-o"
+                               href="#{request.contextPath}/faces/prospecto/registro.xhtml"/>
+                    <b:navLink value="Reporte" 
+                               icon-awesome="fa-newspaper-o"
+                               href="#{request.contextPath}/faces/prospecto/reporte.xhtml"/>
+                </b:dropMenu>`
+                
+                <b:dropMenu value="Tratamientos" icon-awesome="fa-group">
+                    <b:navLink value="Registro" 
+                               icon-awesome="fa-newspaper-o"
+                               href="#{request.contextPath}/faces/prospecto/registro.xhtml"/>
+                    <b:navLink value="Reporte" 
+                               icon-awesome="fa-newspaper-o"
+                               href="#{request.contextPath}/faces/prospecto/reporte.xhtml"/>
+                </b:dropMenu>`
+            </b:navbarLinks>
+            <b:navbarLinks pull="right" style-class="hidden-xs">
+                <b:dropMenu value="" icon-awesome="fa-cog">
+                    <b:navLink value="Cerrar" 
+                               href="#{request.contextPath}/faces/index.xhtml"/>                    
+                    <b:navLink value ="Temas">
+                        <h:form style="display:inline" styleClass="form-inline">
+                            <b:selectOneMenu value="#{themeController.tema}"
+                                             style="width: 180px;margin:8px"
+                                             onchange="$('.theme-selector-button').click()">
+                                <f:selectItem itemValue="default" itemLabel="default"/>
+                                <f:selectItem itemValue="patternfly" itemLabel="patternfly"/>
+                                <f:selectItem itemValue="cyborg" itemLabel="cyborg"/>
+                                <f:selectItem itemValue="darkly" itemLabel="darkly"/>
+                                <f:selectItem itemValue="cosmo" itemLabel="cosmo"/>
+                                <f:selectItem itemValue="flatly" itemLabel="flatly"/>
+                                <f:selectItem itemValue="journal" itemLabel="journal"/>
+                                <f:selectItem itemValue="paper" itemLabel="paper"/>
+                                <f:selectItem itemValue="readable" itemLabel="readable"/>
+                                <f:selectItem itemValue="sandstone" itemLabel="sandstone"/>
+                                <f:selectItem itemValue="simplex" itemLabel="simplex"/>
+                                <f:selectItem itemValue="slate" itemLabel="slate"/>
+                                <f:selectItem itemValue="superhero" itemLabel="superhero"/>
+                                <f:selectItem itemValue="united" itemLabel="united"/>
+                            </b:selectOneMenu>
+                            <b:commandButton class="theme-selector-button" value="select"
+                                             style="display: none"/>
+                        </h:form>
+                    </b:navLink>
+                </b:dropMenu>
+            </b:navbarLinks>
+        </b:navBar>        
+    
+
+            <ui:insert name="content">Content</ui:insert>
+
+    </h:body>
+
+</html>

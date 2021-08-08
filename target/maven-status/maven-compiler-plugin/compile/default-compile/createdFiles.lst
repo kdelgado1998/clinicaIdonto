@@ -1,0 +1,10 @@
+com\sc403\odontofidelitas\resources\JavaEE8Resource.class
+gestion\PacienteGestion.class
+controller\UsuarioController.class
+gestion\UsuarioGestion.class
+model\Conexion.class
+model\Paciente.class
+model\Usuario.class
+com\sc403\odontofidelitas\JAXRSConfiguration.class
+controller\ThemeController.class
+controller\PacienteController.class
