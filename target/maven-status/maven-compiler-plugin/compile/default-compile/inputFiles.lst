@@ -1,4 +1,5 @@
 C:\Users\erick\Desktop\Clent Serv\clinicaIdonto\src\main\java\model\Paciente.java
+C:\Users\erick\Desktop\Clent Serv\clinicaIdonto\src\main\java\model\Tratamiento.java
 C:\Users\erick\Desktop\Clent Serv\clinicaIdonto\src\main\java\model\Conexion.java
 C:\Users\erick\Desktop\Clent Serv\clinicaIdonto\src\main\java\model\Usuario.java
 C:\Users\erick\Desktop\Clent Serv\clinicaIdonto\src\main\java\controller\PacienteController.java
@@ -6,5 +7,6 @@ C:\Users\erick\Desktop\Clent Serv\clinicaIdonto\src\main\java\gestion\PacienteGe
 C:\Users\erick\Desktop\Clent Serv\clinicaIdonto\src\main\java\controller\UsuarioController.java
 C:\Users\erick\Desktop\Clent Serv\clinicaIdonto\src\main\java\com\sc403\odontofidelitas\JAXRSConfiguration.java
 C:\Users\erick\Desktop\Clent Serv\clinicaIdonto\src\main\java\controller\ThemeController.java
+C:\Users\erick\Desktop\Clent Serv\clinicaIdonto\src\main\java\gestion\TratamientoGestion.java
 C:\Users\erick\Desktop\Clent Serv\clinicaIdonto\src\main\java\com\sc403\odontofidelitas\resources\JavaEE8Resource.java
 C:\Users\erick\Desktop\Clent Serv\clinicaIdonto\src\main\java\gestion\UsuarioGestion.java
