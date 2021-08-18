@@ -28,7 +28,7 @@ public class TratamientoGestion {
                         datos.getString(7),//apiñamiento
                         datos.getString(8),//requieredesgaste
                         datos.getString(9),//requierelimpieza
-                        datos.getInt(7)//requiereextracciones                
+                        datos.getInt(10)//requiereextracciones                
                 ));
             }
         } catch (SQLException ex) {

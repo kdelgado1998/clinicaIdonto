@@ -1,0 +1,48 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:ui="http://xmlns.jcp.org/jsf/facelets"
+      xmlns:b="http://bootsfaces.net/ui">
+    <body>
+
+        <ui:composition template="./../resources/templates/plantilla.xhtml">
+
+            <ui:define name="content">
+                <b:dataTable value="#{tratamientoController.tratamiento}"
+                             var="tratamiento"
+                             excel="true"
+                             pdf="true"
+                             csv="true"
+                             copy="true"
+                             print="true"
+                             column-visibility="true">
+                    <b:dataTableColumn value="#{tratamiento.idTratamiento}"
+                                       label="Tratamiento"/>
+                    <b:dataTableColumn value="#{tratamiento.idPaciente}"
+                                       label="Id Paciente"/>
+                    <b:dataTableColumn value="#{tratamiento.idTecnica}"
+                                       label="Tipo de Técnica"/>
+                    <b:dataTableColumn value="#{tratamiento.periodontitis}"
+                                       label="Tipo de Periodontitis"/>
+                    <b:dataTableColumn value="#{tratamiento.claseAnteroPosterior}"
+                                       label="Clase Antero Posterior"/>
+                    <b:dataTableColumn value="#{tratamiento.apiñamiento}"
+                                       label="Apiñamiento"/>
+                    <b:dataTableColumn value="#{tratamiento.requiereDesgaste}"
+                                       label="Requiere Desgaste"/>
+                    <b:dataTableColumn value="#{tratamiento.requiereLimpieza}"
+                                       label="Requiere Limpieza"/>
+                    <b:dataTableColumn value="#{tratamiento.requiereExtracciones}"
+                                       label="Requiere Extracciones"/>
+                    
+                    
+                </b:dataTable>
+                
+                
+                
+            </ui:define>
+
+        </ui:composition>
+
+    </body>
+</html>

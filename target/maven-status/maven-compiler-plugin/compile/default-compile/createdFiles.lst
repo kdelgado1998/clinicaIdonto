@@ -1,3 +1,4 @@
+controller\TratamientoController.class
 gestion\PacienteGestion.class
 gestion\UsuarioGestion.class
 model\Tratamiento.class
