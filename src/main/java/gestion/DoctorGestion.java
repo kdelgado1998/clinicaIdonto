@@ -15,9 +15,10 @@ import model.Conexion;
 import model.Doctor;
 
 public class DoctorGestion {
+    
      public static ArrayList<Doctor> getDoctors() {
-
         ArrayList<Doctor> lista = new ArrayList<>();
+        
         String tira = "SELECT * FROM DOCTOR";
 
         try {
