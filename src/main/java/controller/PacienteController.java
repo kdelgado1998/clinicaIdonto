@@ -19,4 +19,7 @@ public class PacienteController implements Serializable {
         return PacienteGestion.getPacientes();
     }
     
+    
 }//fin de la clase
+
+

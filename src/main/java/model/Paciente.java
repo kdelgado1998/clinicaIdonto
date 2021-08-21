@@ -14,6 +14,7 @@ public class Paciente {
     private boolean activo;
 
     public Paciente() {
+        
     }
 
     public Paciente(String idPaciente, String idDoctor, String nombre, String apellido1, String apellido2, int edad, int telefono, String correo, boolean activo) {
