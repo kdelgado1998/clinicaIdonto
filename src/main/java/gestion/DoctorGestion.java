@@ -29,7 +29,6 @@ public class DoctorGestion {
             ResultSet datos = consulta.executeQuery();
             while (datos.next()) {
                 lista.add(new Doctor(
-                        datos.getInt(1),//id
                         datos.getInt(2),//idDoctor
                         datos.getInt(3),//cantidadTratamiento
                         datos.getString(4),//correo

@@ -5,10 +5,6 @@
  */
 package model;
 
-/**
- *
- * @author ESTEBAN
- */
 public class Doctor {
     private int id;
     private int idDoctor;
@@ -21,8 +17,7 @@ public class Doctor {
     public Doctor() {
     }
 
-    public Doctor(int id, int idDoctor, int cantidadTratamientos, String correo, int telefono, String direccion, boolean activo) {
-        this.id = id;
+    public Doctor(int idDoctor, int cantidadTratamientos, String correo, int telefono, String direccion, boolean activo) {
         this.idDoctor = idDoctor;
         this.cantidadTratamientos = cantidadTratamientos;
         this.correo = correo;
@@ -30,6 +25,8 @@ public class Doctor {
         this.direccion = direccion;
         this.activo = activo;
     }
+
+    
     
     public int getId() {
         return id;
