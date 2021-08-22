@@ -8,7 +8,7 @@ import java.util.logging.Level;
 import java.util.logging.Logger;
 import model.Conexion;
 import model.Tratamiento;
-import model.Usuario;
+
 
 public class TratamientoGestion {
     public static ArrayList<Tratamiento> getTratamiento(){
