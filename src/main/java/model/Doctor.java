@@ -7,7 +7,7 @@ package model;
 
 public class Doctor {
     private int id;
-    private int idDoctor;
+    private String idDoctor;
     private int cantidadTratamientos;
     private String correo;
     private int telefono;
@@ -17,7 +17,7 @@ public class Doctor {
     public Doctor() {
     }
 
-    public Doctor(int idDoctor, int cantidadTratamientos, String correo, int telefono, String direccion, boolean activo) {
+    public Doctor(String idDoctor, int cantidadTratamientos, String correo, int telefono, String direccion, boolean activo) {
         this.idDoctor = idDoctor;
         this.cantidadTratamientos = cantidadTratamientos;
         this.correo = correo;
@@ -36,11 +36,11 @@ public class Doctor {
         this.id = id;
     }
 
-    public int getIdDoctor() {
+    public String getIdDoctor() {
         return idDoctor;
     }
 
-    public void setIdDoctor(int idDoctor) {
+    public void setIdDoctor(String idDoctor) {
         this.idDoctor = idDoctor;
     }
 

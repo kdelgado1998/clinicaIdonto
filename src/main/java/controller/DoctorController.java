@@ -15,7 +15,7 @@ public class DoctorController implements Serializable {
     public DoctorController() {
     }
     
-    public List<Doctor> getDoctors(){
-        return DoctorGestion.getDoctors();
+    public List<Doctor> getDoctor(){
+        return DoctorGestion.getDoctor();
     }
 }

@@ -16,7 +16,7 @@ import model.Doctor;
 
 public class DoctorGestion {
     
-     public static ArrayList<Doctor> getDoctors() {
+     public static ArrayList<Doctor> getDoctor() {
         ArrayList<Doctor> lista = new ArrayList<>();
         
         String tira = "SELECT * FROM DOCTOR";
@@ -29,7 +29,7 @@ public class DoctorGestion {
             ResultSet datos = consulta.executeQuery();
             while (datos.next()) {
                 lista.add(new Doctor(
-                        datos.getInt(2),//idDoctor
+                        datos.getString(2),//idDoctor
                         datos.getInt(3),//cantidadTratamiento
                         datos.getString(4),//correo
                         datos.getInt(5),//telefono
