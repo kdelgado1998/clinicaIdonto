@@ -16,42 +16,52 @@
         <b:navBar fluid="true" brand="Clinica Odonto"
                   brandHref="#{request.contextPath}/faces/principal.xhtml">
             <b:navbarLinks pull="left">
+
                 <b:dropMenu value="Pacientes" icon-awesome="fa-group">
                     <b:navLink value="Gestión" 
                                icon-awesome="fa-newspaper-o"
                                href="#{request.contextPath}/faces/pacientes/list.xhtml"/>
-                    <b:navLink value="Doctor" 
+                    <b:navLink value="Reporte" 
                                icon-awesome="fa-group"
                                href="#{request.contextPath}/faces/pacientes/certificacion.xhtml"/>
                 </b:dropMenu>
                 
                 <b:dropMenu value="Doctores" icon-awesome="fa-group">
-                    <b:navLink value="Registro" 
+                    <b:navLink value="Gestión" 
                                icon-awesome="fa-newspaper-o"
-                               href="#{request.contextPath}/faces/prospecto/registro.xhtml"/>
+                               href="#{request.contextPath}/faces/doctores/list.xhtml"
+                               />
+                   
                     <b:navLink value="Reporte" 
+                               icon-awesome="fa-group"
+                               href="#{request.contextPath}/faces/pacientes/certificacion.xhtml"/>
+                </b:dropMenu>
+                
+                <b:dropMenu value="Tratamiento" icon-awesome="fa-group">
+                    <b:navLink value="Gestion" 
                                icon-awesome="fa-newspaper-o"
+                               href="#{request.contextPath}/faces/tratamiento/list.xhtml"/>
+
+                    <b:navLink value="Reporte" 
+                               icon-awesome="fa-group"
                                href="#{request.contextPath}/faces/prospecto/reporte.xhtml"/>
-                </b:dropMenu>`
+                </b:dropMenu>
                 
                 <b:dropMenu value="Tecnicas de Tratamiento" icon-awesome="fa-group">
-                    <b:navLink value="Registro" 
+                    <b:navLink value="Gestion" 
                                icon-awesome="fa-newspaper-o"
-                               href="#{request.contextPath}/faces/prospecto/registro.xhtml"/>
+                               href="#{request.contextPath}/faces/tratamiento/list.xhtml"/>
+
                     <b:navLink value="Reporte" 
-                               icon-awesome="fa-newspaper-o"
+                               icon-awesome="fa-group"
                                href="#{request.contextPath}/faces/prospecto/reporte.xhtml"/>
-                </b:dropMenu>`
+                </b:dropMenu>
                 
-                <b:dropMenu value="Tratamientos" icon-awesome="fa-group">
-                    <b:navLink value="Registro" 
-                               icon-awesome="fa-newspaper-o"
-                               href="#{request.contextPath}/faces/prospecto/registro.xhtml"/>
-                    <b:navLink value="Reporte" 
-                               icon-awesome="fa-newspaper-o"
-                               href="#{request.contextPath}/faces/prospecto/reporte.xhtml"/>
-                </b:dropMenu>`
+                <b:navLink  value="Respaldos" 
+                            href="#{request.contextPath}/faces/respaldo/respaldo.xhtml"/>
+ 
             </b:navbarLinks>
+
             <b:navbarLinks pull="right" style-class="hidden-xs">
                 <b:dropMenu value="" icon-awesome="fa-cog">
                     <b:navLink value="Cerrar" 
@@ -83,9 +93,9 @@
                 </b:dropMenu>
             </b:navbarLinks>
         </b:navBar>        
-    
 
-            <ui:insert name="content">Content</ui:insert>
+
+        <ui:insert name="content">Content</ui:insert>
 
     </h:body>
 

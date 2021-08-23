@@ -1,11 +1,18 @@
 package gestion;
 
+import java.io.StringWriter;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
+import java.text.DateFormat;
+import java.text.SimpleDateFormat;
 import java.util.ArrayList;
 import java.util.logging.Level;
 import java.util.logging.Logger;
+import javax.json.Json;
+import javax.json.JsonObject;
+import javax.json.JsonObjectBuilder;
+import javax.json.JsonWriter;
 import model.Conexion;
 import model.Paciente;
 
@@ -18,7 +25,7 @@ public class PacienteGestion {
 
         try {
 
-            PreparedStatement consulta = Conexion.getConnexion()
+            PreparedStatement consulta = Conexion.getConnection()
                     .prepareStatement(tira);
 
             ResultSet datos = consulta.executeQuery();
@@ -39,5 +46,43 @@ public class PacienteGestion {
         }
         return lista;
     }
+    
+    public static String tiraJson() {
+        String tiraJson="";
+        String sentencia = "select * from paciente";
+        try {
+            PreparedStatement consulta = Conexion.getConnection().prepareStatement(sentencia);
+            ResultSet datos = consulta.executeQuery();
 
-}//fin de la clase
+            DateFormat formato = new SimpleDateFormat("yyyy-MM-dd");
+            
+            JsonObjectBuilder constructorJson = Json.createObjectBuilder();
+            JsonObject objetoJson;
+            JsonWriter salidaJson;
+            StringWriter tira;
+            
+            while (datos.next()) {
+                objetoJson = constructorJson
+                    .add("idPaciente", datos.getInt(2))  //idPaciente
+                    .add("idDoctor", datos.getString(3)) //idDoctor
+                    .add("nombre", datos.getString(4)) //correo
+                    .add("apellido1", datos.getString(5)) //telefono
+                    .add("apellido2", datos.getString(6)) //direccion
+                    .add("edad", datos.getInt(6)) //direccion
+                    .add("telefono", datos.getInt(6)) //direccion
+                    .add("correo", datos.getString(6)) //direccion
+                    .add("activo", datos.getBoolean(7)) //activo
+                    .build();
+                
+                tira = new StringWriter();
+                salidaJson = Json.createWriter(tira);
+                salidaJson.write(objetoJson);
+                tiraJson+=tira.toString()+"\n";                
+            }
+        } catch (SQLException ex) {
+            Logger.getLogger(PacienteGestion.class.getName()).log(Level.SEVERE, null, ex);
+        }
+        return tiraJson;
+    }
+
+}

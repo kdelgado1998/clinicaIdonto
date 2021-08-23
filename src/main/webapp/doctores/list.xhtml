@@ -1,0 +1,43 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:ui="http://xmlns.jcp.org/jsf/facelets"
+      xmlns:b="http://bootsfaces.net/ui"
+      xmlns:h="http://xmlns.jcp.org/jsf/html">
+
+    <body>
+        <ui:composition template="./../resources/templates/plantilla.xhtml">
+            <ui:define name="content">
+                <b:panel title="Doctor" look="info">
+                    <h:form>
+                        <b:dataTable value="#{doctorController.doctor}"
+                                     var="doctor"
+                                     excel="true"
+                                     pdf="true"
+                                     csv="true"
+                                     copy="true"
+                                     print="true"
+                                     column-visibility="true">
+
+                            <b:dataTableColumn value="#{doctor.idDoctor}"
+                                               label="Cedula"/>
+                            <b:dataTableColumn value="#{doctor.cantidadTratamientos}"
+                                               label="Cantidad de Tratamientos"/>
+                            <b:dataTableColumn value="#{doctor.correo}"
+                                               label="correo"/>
+                            <b:dataTableColumn value="#{doctor.telefono}"
+                                               label="Numero de Telefono"/>
+                            <b:dataTableColumn value="#{doctor.direccion}"
+                                               label="Direccion"/>
+                            <b:dataTableColumn value="#{doctor.activo}"
+                                               label="Disponible"/>
+                            
+                        </b:dataTable>
+                    </h:form>
+                </b:panel>
+            </ui:define>
+
+        </ui:composition>
+
+    </body>
+</html>

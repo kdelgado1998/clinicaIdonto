@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 C:\Users\erick\Desktop\Clent Serv\clinicaIdonto\src\main\java\model\Paciente.java
 C:\Users\erick\Desktop\Clent Serv\clinicaIdonto\src\main\java\model\Tratamiento.java
 C:\Users\erick\Desktop\Clent Serv\clinicaIdonto\src\main\java\controller\PacienteController.java
@@ -15,3 +16,22 @@ C:\Users\erick\Desktop\Clent Serv\clinicaIdonto\src\main\java\controller\ThemeCo
 C:\Users\erick\Desktop\Clent Serv\clinicaIdonto\src\main\java\gestion\TratamientoGestion.java
 C:\Users\erick\Desktop\Clent Serv\clinicaIdonto\src\main\java\com\sc403\odontofidelitas\resources\JavaEE8Resource.java
 C:\Users\erick\Desktop\Clent Serv\clinicaIdonto\src\main\java\controller\TecnicaController.java
+=======
+C:\Users\Administrador\OneDrive\Documentos\GitHub\clinicaIdonto\src\main\java\controller\RespaldoController.java
+C:\Users\Administrador\OneDrive\Documentos\GitHub\clinicaIdonto\src\main\java\controller\UsuarioController.java
+C:\Users\Administrador\OneDrive\Documentos\GitHub\clinicaIdonto\src\main\java\model\Usuario.java
+C:\Users\Administrador\OneDrive\Documentos\GitHub\clinicaIdonto\src\main\java\controller\TratamientoController.java
+C:\Users\Administrador\OneDrive\Documentos\GitHub\clinicaIdonto\src\main\java\com\sc403\odontofidelitas\resources\JavaEE8Resource.java
+C:\Users\Administrador\OneDrive\Documentos\GitHub\clinicaIdonto\src\main\java\gestion\TratamientoGestion.java
+C:\Users\Administrador\OneDrive\Documentos\GitHub\clinicaIdonto\src\main\java\model\Paciente.java
+C:\Users\Administrador\OneDrive\Documentos\GitHub\clinicaIdonto\src\main\java\model\Doctor.java
+C:\Users\Administrador\OneDrive\Documentos\GitHub\clinicaIdonto\src\main\java\gestion\DoctorGestion.java
+C:\Users\Administrador\OneDrive\Documentos\GitHub\clinicaIdonto\src\main\java\gestion\PacienteGestion.java
+C:\Users\Administrador\OneDrive\Documentos\GitHub\clinicaIdonto\src\main\java\com\sc403\odontofidelitas\JAXRSConfiguration.java
+C:\Users\Administrador\OneDrive\Documentos\GitHub\clinicaIdonto\src\main\java\model\Conexion.java
+C:\Users\Administrador\OneDrive\Documentos\GitHub\clinicaIdonto\src\main\java\controller\DoctorController.java
+C:\Users\Administrador\OneDrive\Documentos\GitHub\clinicaIdonto\src\main\java\controller\PacienteController.java
+C:\Users\Administrador\OneDrive\Documentos\GitHub\clinicaIdonto\src\main\java\gestion\UsuarioGestion.java
+C:\Users\Administrador\OneDrive\Documentos\GitHub\clinicaIdonto\src\main\java\controller\ThemeController.java
+C:\Users\Administrador\OneDrive\Documentos\GitHub\clinicaIdonto\src\main\java\model\Tratamiento.java
+>>>>>>> main

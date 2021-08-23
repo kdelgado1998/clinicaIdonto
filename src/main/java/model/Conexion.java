@@ -12,7 +12,7 @@ public class Conexion {
     private static final String DBURL="jdbc:mysql://localhost:3306/odonto";
     private static Connection conn=null;
     
-    
+    /*Esto es una prueba xd*/
     private Conexion(){
         try {
             Class.forName("com.mysql.cj.jdbc.Driver")
@@ -26,7 +26,7 @@ public class Conexion {
         }
     }
     
-    public static synchronized Connection getConnexion(){
+    public static synchronized Connection getConnection(){
         if(conexion==null){
             conexion = new Conexion();
         }
