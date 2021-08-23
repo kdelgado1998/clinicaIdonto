@@ -5,9 +5,12 @@ model\Tratamiento.class
 model\Paciente.class
 model\Usuario.class
 com\sc403\odontofidelitas\JAXRSConfiguration.class
+gestion\TecnicaGestion.class
 controller\PacienteController.class
 com\sc403\odontofidelitas\resources\JavaEE8Resource.class
 controller\UsuarioController.class
+model\Tecnica.class
 model\Conexion.class
+model\Doctor.class
 gestion\TratamientoGestion.class
 controller\ThemeController.class
