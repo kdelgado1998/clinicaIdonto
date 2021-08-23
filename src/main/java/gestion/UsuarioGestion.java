@@ -17,7 +17,7 @@ public class UsuarioGestion {
         Usuario usuario = null;
         try {
 
-            PreparedStatement consulta = Conexion.getConnexion()
+            PreparedStatement consulta = Conexion.getConnection()
                     .prepareStatement(tira);
 
             consulta.setString(1, idUsuario);

@@ -9,8 +9,8 @@ model\Usuario.class
 com\sc403\odontofidelitas\JAXRSConfiguration.class
 controller\PacienteController.class
 com\sc403\odontofidelitas\resources\JavaEE8Resource.class
-controller\RepaldoController.class
 controller\UsuarioController.class
+controller\RespaldoController.class
 model\Conexion.class
 model\Doctor.class
 gestion\TratamientoGestion.class

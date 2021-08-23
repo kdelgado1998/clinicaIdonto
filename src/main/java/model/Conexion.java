@@ -26,7 +26,7 @@ public class Conexion {
         }
     }
     
-    public static synchronized Connection getConnexion(){
+    public static synchronized Connection getConnection(){
         if(conexion==null){
             conexion = new Conexion();
         }
