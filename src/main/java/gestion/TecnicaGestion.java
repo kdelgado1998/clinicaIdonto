@@ -15,7 +15,7 @@ public class TecnicaGestion {
         ArrayList<Tecnica> lista = new ArrayList<>();
         String tira = "select * from tecnica";       
         try {
-            PreparedStatement consulta = Conexion.getConnexion()
+            PreparedStatement consulta = Conexion.getConnection()
                     .prepareStatement(tira);          
             ResultSet datos = consulta.executeQuery();
             while (datos.next()) {

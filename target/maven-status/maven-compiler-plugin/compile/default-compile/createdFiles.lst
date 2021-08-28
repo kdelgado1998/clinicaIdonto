@@ -10,13 +10,11 @@ com\sc403\odontofidelitas\JAXRSConfiguration.class
 gestion\TecnicaGestion.class
 controller\PacienteController.class
 com\sc403\odontofidelitas\resources\JavaEE8Resource.class
+model\Tecnicas.class
 controller\TecnicaController.class
 controller\UsuarioController.class
-<<<<<<< HEAD
 model\Tecnica.class
-=======
 controller\RespaldoController.class
->>>>>>> main
 model\Conexion.class
 model\Doctor.class
 gestion\TratamientoGestion.class
